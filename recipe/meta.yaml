@@ -1,5 +1,5 @@
 {% set name = "climix" %}
-{% set version = "0.18.1" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/climix-{{ version }}.tar.gz
-  sha256: f8ff88e57d9cccf9ac0f6de81bbc672f49c03eadda7678dc9c236c4118d57728
+  sha256: 9d99fe5e282578cdae817a3081e2f90194ab83834eccc0f63f401ef88aa7c182
 
 build:
   number: 0
