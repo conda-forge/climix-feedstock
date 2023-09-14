@@ -49,13 +49,16 @@ requirements:
 test:
   imports:
     - climix
-  commands:
-    - pip check
-    - climix --help
-    - cd $SRC_DIR && pytest --ignore-glob=**/integration/* tests
+  source_files:
+    - tests
+    - pyproject.toml
   requires:
     - pip
     - pytest
+  commands:
+    - pip check
+    - climix --help
+    - pytest --ignore-glob=**/integration/*
 
 about:
   home: https://git.smhi.se/climix/climix
