@@ -52,7 +52,7 @@ test:
   commands:
     - pip check
     - climix --help
-    - pytest tests/unit
+    - cd $SRC_DIR && pytest --ignore-glob=**/integration/* tests
   requires:
     - pip
     - pytest
