@@ -52,8 +52,10 @@ test:
   commands:
     - pip check
     - climix --help
+    - pytest tests/unit
   requires:
     - pip
+    - pytest
 
 about:
   home: https://git.smhi.se/climix/climix
