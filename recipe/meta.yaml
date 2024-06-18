@@ -19,30 +19,24 @@ build:
 
 requirements:
   host:
-    - python >=3.10,<3.12
+    - python >=3.10
     - setuptools >=61.2
     - wheel
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.10,<3.12
-    - bottleneck
+    - python >=3.10
     - cftime
     - cf-units
     - dask >=2023.1.0
-    - dask-jobqueue
-    - dask-mpi
     - gordias
     - isodate
-    - netcdf4
     - numba
-    - numpy
-    - pandas
-    - psutil
+    - numpy <2
     - pyxdg
     - pyyaml
     - regex
-    - scitools-iris >=3,<4
+    - iris >=3,<4
     - sparse
 
 test:
