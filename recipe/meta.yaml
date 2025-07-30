@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "climix" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/climix-{{ version }}.tar.gz
-  sha256: 310af5994347e4fe3e667e665a1f5aa82338c8631de73a3d10bcbfb5ccd0172b
+  sha256: 2178a4410598de2080f4413cd15c2ca6d42eedef00a15357dc8de79877dd4b3e
 
 build:
   number: 0
